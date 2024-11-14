@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import DailyForecast from "./DailyForecast";
 import axios from "axios";
 
 import "./App.css";
@@ -24,7 +25,7 @@ export default function Weather(props) {
 
   function search() {
     const apiKey = "55ca6oet30d44eb41255b7966f2f9da0";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -61,6 +62,10 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
+        <DailyForecast
+          coordinates={weatherData.coordinates}
+          data={weatherData}
+        />
       </div>
     );
   } else {

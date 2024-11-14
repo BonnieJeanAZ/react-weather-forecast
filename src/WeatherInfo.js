@@ -5,7 +5,6 @@ import WeatherTemperature from "./WeatherTemperature";
 import "./App.css";
 
 export default function WeatherInfo(props) {
-  console.log(props.data);
   return (
     <div className WeatherInfo>
       <div className="row">
