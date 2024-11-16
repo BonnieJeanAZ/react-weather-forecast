@@ -3,7 +3,7 @@ import WeatherInfo from "./WeatherInfo";
 import DailyForecast from "./DailyForecast";
 import axios from "axios";
 
-import "./App.css";
+import "./Forecast.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });

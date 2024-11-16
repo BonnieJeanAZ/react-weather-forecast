@@ -1,0 +1,32 @@
+.img-fluid {
+  scale: 150%;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.TemperatureMax {
+  font-weight: 300;
+}
+
+.WeatherTemperature {
+  font-size: 32px;
+  color: black;
+  font-weight: 500;
+}
+
+.TemperatureIcon {
+  scale: 90%;
+}
+.temperature {
+  font-size: 48px;
+}
+
+.col {
+  text-align: center;
+}
