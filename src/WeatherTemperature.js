@@ -4,10 +4,6 @@ import "./Forecast.css";
 
 export default function WeatherTemperature(props) {
   const [unit, setUnit] = useState("celcius");
-  function showFahrenheit(event) {
-    event.preventDefault();
-    setUnit("fahrenheit");
-  }
 
   function showCelcius(event) {
     event.preventDefault();
